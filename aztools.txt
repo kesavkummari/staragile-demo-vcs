@@ -1,0 +1,7 @@
+Azure Pipeline:
+
+boards
+repo
+Pipeline
+tests
+artifact
