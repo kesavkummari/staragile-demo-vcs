@@ -83,3 +83,21 @@ On branch main
 Your branch is up to date with 'origin/main'.
 
 nothing to commit, working tree clean
+
+cloudbinary@Clouds-MacBook-Pro staragile-demo-vcs % git branch
+* main
+cloudbinary@Clouds-MacBook-Pro staragile-demo-vcs % git branch -r
+  origin/HEAD -> origin/main
+  origin/main
+cloudbinary@Clouds-MacBook-Pro staragile-demo-vcs % git branch -a
+* main
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/main
+cloudbinary@Clouds-MacBook-Pro staragile-demo-vcs % git fetch
+cloudbinary@Clouds-MacBook-Pro staragile-demo-vcs % git pull
+Updating d82a74d..b260f25
+Fast-forward
+ vcs.txt | 15 +++++++++++++++
+ 1 file changed, 15 insertions(+)
+ create mode 100644 vcs.txt
+ 
