@@ -1,0 +1,85 @@
+STEP-1 :
+cloudbinary@Clouds-MacBook-Pro % git config --global user.name "kesavkummari"
+
+cloudbinary@Clouds-MacBook-Pro % git config --global user.email "kesav.kummari@gmail.com"
+
+STEP-2 :
+git clone https://github.com/kesavkummari/staragile-demo-vcs.git
+
+ls -lrta staragile-demo-vcs
+
+Open Repo Using VSCode Tool :
+
+STEP-3 : Execute OS Commands :
+cloudbinary@Clouds-MacBook-Pro staragile-demo-vcs % pwd
+/Users/ck/gitdemo/staragile-demo-vcs
+
+cloudbinary@Clouds-MacBook-Pro staragile-demo-vcs % ls -lrta
+drwxr-xr-x  36 cloudbinary  staff  1152  6 Nov 10:22 ..
+drwxr-xr-x   4 cloudbinary  staff   128  6 Nov 10:22 .
+-rw-r--r--   1 cloudbinary  staff    42  6 Nov 10:22 README.md
+drwxr-xr-x  14 cloudbinary  staff   448  6 Nov 10:30 .git
+
+STEP-4 : Execute Git Commands :
+cloudbinary@Clouds-MacBook-Pro staragile-demo-vcs % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+cloudbinary@Clouds-MacBook-Pro staragile-demo-vcs % git branch
+* main
+
+Create a File :
+devtools.txt
+
+Add Content & Save the File :
+
+Execute Git Commands:
+
+cloudbinary@Clouds-MacBook-Pro staragile-demo-vcs % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        devtools.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+cloudbinary@Clouds-MacBook-Pro staragile-demo-vcs % git add .
+
+cloudbinary@Clouds-MacBook-Pro staragile-demo-vcs % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   devtools.txt
+
+cloudbinary@Clouds-MacBook-Pro staragile-demo-vcs % git commit -m "DevOps Tools List"
+[main 3fda9f9] DevOps Tools List
+ 1 file changed, 7 insertions(+)
+ create mode 100644 devtools.txt
+
+cloudbinary@Clouds-MacBook-Pro staragile-demo-vcs % git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+cloudbinary@Clouds-MacBook-Pro staragile-demo-vcs % git push origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 344 bytes | 344.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/kesavkummari/staragile-demo-vcs.git
+   bc69dec..3fda9f9  main -> main
+cloudbinary@Clouds-MacBook-Pro staragile-demo-vcs % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
